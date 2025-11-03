@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# Environments
+.env
+venv/
+.venv/
+
+# Data & Models
+data/people/
+data/videos/
+data/roi_polygon.npy
+data/models/*.pkl
+models/*.pt
+outputs/
+*.mp4
+*.avi
+*.jpg
+*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+data/models/glintr100.onnx

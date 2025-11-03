@@ -1,0 +1,24 @@
+[Unit]
+Description=HomeSecurity Entry Guard
+After=network.target
+
+[Service]
+# 'pi' is the default username on Raspberry Pi OS.
+# If your Pi user is different, edit this.
+User=pi
+
+# Working directory is where your code lives on the Pi
+WorkingDirectory=/home/pi/HomeSecurity
+
+# Run inside the Pi's venv
+ExecStart=/home/pi/HomeSecurity/venv/bin/python /home/pi/HomeSecurity/scripts/entry_guard.py
+
+# Restart on crash
+Restart=always
+RestartSec=5
+
+# Make stdout/stderr unbuffered so logs show immediately in journalctl
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

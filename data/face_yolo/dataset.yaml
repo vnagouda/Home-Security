@@ -1,0 +1,5 @@
+path: C:/Viresh/Projects/Web-Apps/HomeSecurity/data/face_yolo
+train: train/images
+val:   val/images
+nc: 1
+names: [face]
