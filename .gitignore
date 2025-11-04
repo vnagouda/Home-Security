@@ -15,8 +15,6 @@ venv/
 data/people/
 data/videos/
 data/roi_polygon.npy
-data/models/*.pkl
-models/*.pt
 outputs/
 *.mp4
 *.avi
